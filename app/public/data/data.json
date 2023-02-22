@@ -1,13 +1,5 @@
 {
-  "boards": [
-    {
-      "name": "board created by Suraj",
-      "user": 0,
-      "id": 23032519954,
-      "starred": false,
-      "created": "2023-02-22"
-    }
-  ],
+  "boards": [],
   "tasks": [],
   "users": [],
   "lists": []
