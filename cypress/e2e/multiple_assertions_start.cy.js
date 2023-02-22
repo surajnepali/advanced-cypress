@@ -19,3 +19,17 @@ it('Multiple assertions', () => {
     .should('contain.text', 'milk')
 
 })
+
+it('Multiple assertions 2', () => {
+
+  cy
+    .get('[data-cy=task]')
+    .should( item => {
+      if (item.length !== 3) {
+        throw new Error('Not enough elements!')
+      }
+      expect(item[0]).to.contain.text('bread')
+      expect(item[1]).to.contain.text('milk')
+    })
+
+})
